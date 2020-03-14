@@ -35,6 +35,7 @@ collections:
   - name: 'pages'
     label: 'Custom Page'
     folder: 'content/'
+    slug: {{slug}}
     create: true
     editor:
       preview: false
