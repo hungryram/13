@@ -16,8 +16,8 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'pages'
-    label: 'Pages'
+  - name: 'defaultpages'
+    label: 'Default Pages'
     files:
       - file: 'content/index.md'
         label: 'Landing Page'
@@ -32,3 +32,15 @@ collections:
         fields:
           - {label: 'Title', name: 'title', widget: 'string'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
+  - name: 'pages'
+    label: 'Pages'
+    create: true
+    files:
+      - folder: 'content/'
+        label: 'Custom Pages'
+        name: 'custom'
+        label: 'Custom Page'
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Description, name: description, widget: string}
