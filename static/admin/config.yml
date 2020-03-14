@@ -37,7 +37,6 @@ collections:
     create: true
     files:
       - folder: 'content/'
-        label: 'Custom Pages'
         name: 'custom'
         label: 'Custom Page'
         fields:
