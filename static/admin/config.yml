@@ -33,13 +33,12 @@ collections:
           - {label: 'Title', name: 'title', widget: 'string'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
   - name: 'pages'
-    label: 'Pages'
+    label: 'Custom Page'
+    folder: 'content/'
     create: true
-    files:
-      - folder: 'content/'
-        name: 'custom'
-        label: 'Custom Page'
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
