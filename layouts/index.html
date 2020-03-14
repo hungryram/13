@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ "styles.css" | absURL}}">
-    <title>Document</title>
-</head>
+{{ partial "head" . }}
 <body>
-    <h1>Home</h1>
+    <h1 class="text-right">Home</h1>
     {{ .Params.title }}
     {{.Content}}
 
